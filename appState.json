@@ -1,0 +1,159 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "8fc8f230-733e-4220-a5f1-c374d7aa59cf": {
+        "id": "8fc8f230-733e-4220-a5f1-c374d7aa59cf",
+        "parent": null,
+        "name": "hiru2907_pythonandNode",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "e5a341e2-7c82-4cb4-9524-2e714a58dfb6",
+          "6e0c85a8-b91b-45d3-9d93-9b13e3dfceff"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru2907_pythonandNode"
+      },
+      "3212b4ff-c226-48da-9fc1-01c19a11ea41": {
+        "id": "3212b4ff-c226-48da-9fc1-01c19a11ea41",
+        "parent": "e5a341e2-7c82-4cb4-9524-2e714a58dfb6",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru2907_pythonandNode/node/lambda.js",
+        "code": "let faker = require('faker');\nexports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": faker.internet.userName()});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "a0875a66-87e3-4fe5-898f-efcce1d43ee8": {
+            "id": "a0875a66-87e3-4fe5-898f-efcce1d43ee8",
+            "name": "Unnamed event",
+            "functionId": "3212b4ff-c226-48da-9fc1-01c19a11ea41",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      },
+      "e5a341e2-7c82-4cb4-9524-2e714a58dfb6": {
+        "id": "e5a341e2-7c82-4cb4-9524-2e714a58dfb6",
+        "parent": "8fc8f230-733e-4220-a5f1-c374d7aa59cf",
+        "name": "node",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3212b4ff-c226-48da-9fc1-01c19a11ea41"
+        ],
+        "isRemovable": true,
+        "filePath": "hiru2907_pythonandNode/node"
+      },
+      "6e0c85a8-b91b-45d3-9d93-9b13e3dfceff": {
+        "id": "6e0c85a8-b91b-45d3-9d93-9b13e3dfceff",
+        "parent": "8fc8f230-733e-4220-a5f1-c374d7aa59cf",
+        "name": "python",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c8a6d6fd-98c5-4749-9092-c37a2b85ce7f",
+          "f19cec79-ddc4-43e5-a9d3-c87444ced872"
+        ],
+        "isRemovable": true,
+        "filePath": "hiru2907_pythonandNode/python"
+      },
+      "c8a6d6fd-98c5-4749-9092-c37a2b85ce7f": {
+        "id": "c8a6d6fd-98c5-4749-9092-c37a2b85ce7f",
+        "parent": "6e0c85a8-b91b-45d3-9d93-9b13e3dfceff",
+        "name": "pythonfn.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru2907_pythonandNode/python/pythonfn.py",
+        "code": "\ndef handler(event, context):\n    \n    return {\"message\": \"Successfully executed\"}\n",
+        "config": {
+          "runtime": "python3.6",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      },
+      "f19cec79-ddc4-43e5-a9d3-c87444ced872": {
+        "id": "f19cec79-ddc4-43e5-a9d3-c87444ced872",
+        "parent": "6e0c85a8-b91b-45d3-9d93-9b13e3dfceff",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru2907_pythonandNode/python/__init__.py",
+        "code": ""
+      }
+    },
+    "deletedFiles": [
+      "hiru2907_pythonandNode/lambda.js"
+    ],
+    "rootNode": "8fc8f230-733e-4220-a5f1-c374d7aa59cf",
+    "openFiles": [
+      "3212b4ff-c226-48da-9fc1-01c19a11ea41",
+      "c8a6d6fd-98c5-4749-9092-c37a2b85ce7f"
+    ],
+    "currentFileId": "c8a6d6fd-98c5-4749-9092-c37a2b85ce7f",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "c8a6d6fd-98c5-4749-9092-c37a2b85ce7f",
+        "varKey": "PYTHONPATH",
+        "varValue": "/var/runtime:/var/task/hiru2907_pythonandNode/python",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "faker": {
+          "name": "faker",
+          "version": "4.1.0",
+          "language": "javascript"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru2907_pythonandNode",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1564401930925
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru2907_pythonandNode",
+      "url": "https://github.com/HirudineeADRT/hiru2907_pythonandNode",
+      "branches": []
+    }
+  }
+}
